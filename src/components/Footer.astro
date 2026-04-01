@@ -1,0 +1,16 @@
+---
+import { type Locale, t } from '../i18n';
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = 'en' } = Astro.props;
+const i = t(lang);
+---
+
+<footer
+  class="text-center py-8 px-6 text-slate-400 text-sm border-t border-teal-400/[0.08]"
+>
+  <p>{i.footer.credit}</p>
+</footer>
