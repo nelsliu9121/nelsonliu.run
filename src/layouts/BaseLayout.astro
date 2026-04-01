@@ -1,14 +1,18 @@
 ---
+import type { Locale } from '../i18n';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+
 interface Props {
   title: string;
   description?: string;
+  lang?: Locale;
 }
 
-const { title, description = 'Nelson Liu - Web Developer' } = Astro.props;
+const { title, description = 'Nelson Liu - Web Developer', lang = 'en' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang === 'zh-tw' ? 'zh-TW' : 'en'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +25,7 @@ const { title, description = 'Nelson Liu - Web Developer' } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-navy-900 text-slate-300 font-sans leading-relaxed">
+    <LanguageSwitcher lang={lang} />
     <slot />
   </body>
 </html>
