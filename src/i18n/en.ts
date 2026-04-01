@@ -43,6 +43,6 @@ export default {
     subtitle: "Feel free to reach out — I'm always open to new opportunities and conversations",
   },
   footer: {
-    credit: 'Designed & built by Nelson Liu',
+    credit: 'Designed & built by Nelson Liu & Claude',
   },
 } as const;

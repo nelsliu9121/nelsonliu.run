@@ -43,6 +43,6 @@ export default {
     subtitle: '歡迎隨時聯繫我 — 我樂於認識新朋友、探索新的合作機會',
   },
   footer: {
-    credit: '由 Nelson Liu 設計與開發',
+    credit: '由 Nelson Liu 與 Claude 設計與開發',
   },
 } as const;
