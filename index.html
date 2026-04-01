@@ -1,38 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Nelson Liu - Web Developer specializing in modern web technologies and cross-platform applications">
 
-	<title>劉于誠 Nelson Liu | Front-end Developer</title>
+	<title>劉于誠 Nelson Liu | Web Developer</title>
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
-
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<link rel="stylesheet" href="css/themes/white-blue.css">
-	<!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 </head>
 <body>
-	<main>
-		<div class="intro">Hello, I'm Nelson!</div>
-		<div class="tagline">I'm a front-end developer, focusing on web tech and cross platform mobile app</div>
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/nelsliu9121"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://twitter.com/sugardruid"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/nelsliu9121"><i class="fab fa-linkedin"></i></a>
-    </div>
-	</main>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="hero-content">
+			<p class="hero-greeting">Hi, my name is</p>
+			<h1 class="hero-name">Nelson Liu<span class="hero-name-zh">劉于誠</span></h1>
+			<h2 class="hero-title">I build things for the web.</h2>
+			<p class="hero-bio">
+				I'm a web developer specializing in crafting modern, performant web experiences
+				and cross-platform mobile applications. I love turning ideas into elegant,
+				functional products.
+			</p>
+			<div class="hero-cta">
+				<a href="#skills" class="btn btn-primary">See what I do</a>
+				<a href="mailto:nelsliu9121@gmail.com" class="btn btn-outline">Get in touch</a>
+			</div>
+		</div>
+		<div class="hero-decoration" aria-hidden="true">
+			<div class="code-block">
+				<span class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</span>
+				<span class="code-line indent"><span class="code-key">name</span>: <span class="code-string">'Nelson Liu'</span>,</span>
+				<span class="code-line indent"><span class="code-key">role</span>: <span class="code-string">'Web Developer'</span>,</span>
+				<span class="code-line indent"><span class="code-key">passion</span>: <span class="code-string">'Building for the web'</span>,</span>
+				<span class="code-line">};</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Section -->
+	<section class="skills" id="skills">
+		<div class="section-container">
+			<h2 class="section-title">What I Work With</h2>
+			<p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-code"></i></div>
+					<h3>Front-end</h3>
+					<p>HTML, CSS, JavaScript, TypeScript, React, Vue.js</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+					<h3>Mobile</h3>
+					<p>React Native, cross-platform development, responsive design</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-server"></i></div>
+					<h3>Back-end</h3>
+					<p>Node.js, RESTful APIs, databases, cloud services</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-tools"></i></div>
+					<h3>Tools</h3>
+					<p>Git, CI/CD, Docker, testing frameworks, agile workflow</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Connect Section -->
+	<section class="connect">
+		<div class="section-container">
+			<h2 class="section-title">Let's Connect</h2>
+			<p class="section-subtitle">Feel free to reach out — I'm always open to new opportunities and conversations</p>
+			<div class="social-links">
+				<a target="_blank" href="https://github.com/nelsliu9121" class="social-link" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+					<span>GitHub</span>
+				</a>
+				<a target="_blank" href="https://twitter.com/sugardruid" class="social-link" aria-label="Twitter">
+					<i class="fab fa-twitter"></i>
+					<span>Twitter</span>
+				</a>
+				<a target="_blank" href="https://www.linkedin.com/in/nelsliu9121" class="social-link" aria-label="LinkedIn">
+					<i class="fab fa-linkedin"></i>
+					<span>LinkedIn</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<p>Designed & built by Nelson Liu</p>
+	</footer>
+
 </body>
 </html>
